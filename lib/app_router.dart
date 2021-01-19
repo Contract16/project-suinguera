@@ -6,8 +6,6 @@ class AppRouter {
   static const String HOME = 'HOME';
 
   static Route<dynamic> generateRoute(RouteSettings routeSettings) {
-    final arguments = routeSettings.arguments;
-
     switch (routeSettings.name) {
       case HOME:
         return MaterialPageRoute(builder: (_) => HomePage());

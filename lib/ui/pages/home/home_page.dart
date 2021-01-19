@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:project_suinguera/app_router.dart';
 import 'package:project_suinguera/ui/pages/base/base_view.dart';
 import 'package:project_suinguera/ui/pages/home/home_view_model.dart';
 
