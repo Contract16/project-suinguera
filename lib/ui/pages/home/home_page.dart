@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:project_suinguera/app_router.dart';
 import 'package:project_suinguera/ui/pages/base/base_view.dart';
 import 'package:project_suinguera/ui/pages/home/home_view_model.dart';
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-  final String title;
+class HomePage extends StatefulWidget {
+  HomePage({Key key}) : super(key: key);
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _HomePageState createState() => _HomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return BaseView<HomeViewModel>(
       builder: (context, viewModel, child) => Scaffold(
         appBar: AppBar(
-          title: Text(widget.title),
+          title: Text('Home Page'),
         ),
         body: Center(
           child: Column(
