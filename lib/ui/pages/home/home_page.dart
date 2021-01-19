@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_suinguera/generated/l10n.dart';
 import 'package:project_suinguera/ui/pages/base/base_view.dart';
 import 'package:project_suinguera/ui/pages/home/home_view_model.dart';
 
@@ -15,14 +16,14 @@ class _HomePageState extends State<HomePage> {
     return BaseView<HomeViewModel>(
       builder: (context, viewModel, child) => Scaffold(
         appBar: AppBar(
-          title: Text('Home Page'),
+          title: Text(S.of(context).homePageTitle),
         ),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Text(
-                'You have pushed the button this many times:',
+                S.of(context).homePageCounterDescription,
               ),
               Text(
                 '${viewModel.counter}',
